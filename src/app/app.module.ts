@@ -9,13 +9,15 @@ import { DvdComponent } from './dvd/dvd.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { DvdDetailComponent } from './dvd/dvd-detail/dvd-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookComponent,
     DvdComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DvdDetailComponent
   ],
   imports: [
     BrowserModule,

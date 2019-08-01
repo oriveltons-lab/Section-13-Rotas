@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { Dvd } from '../models/dvd';
 import { timer } from 'rxjs/internal/observable/timer';
-import { Book } from '../models/book';
 import { map } from 'rxjs/internal/operators/map';
 import { delay } from 'rxjs/internal/operators/delay';
+import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +33,7 @@ export class DvdService {
       }
     }
 
-    get(i: number): Observable<Book> {
+    get(i: number): Observable<Dvd> {
       return this.dvds$.pipe(
         map(dvds => ( i >= 0 && i < dvds.length) ? dvds[i] : null),
         delay(1000)
