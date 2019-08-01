@@ -11,6 +11,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { DvdDetailComponent } from './dvd/dvd-detail/dvd-detail.component';
 import { LoadingComponent } from './loading/loading.component';
+import { DvdFormComponent } from './dvd/dvd-form/dvd-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,15 @@ import { LoadingComponent } from './loading/loading.component';
     DvdComponent,
     PageNotFoundComponent,
     DvdDetailComponent,
-    LoadingComponent
+    LoadingComponent,
+    DvdFormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
