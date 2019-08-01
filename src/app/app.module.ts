@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { DvdDetailComponent } from './dvd/dvd-detail/dvd-detail.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DvdDetailComponent } from './dvd/dvd-detail/dvd-detail.component';
     BookComponent,
     DvdComponent,
     PageNotFoundComponent,
-    DvdDetailComponent
+    DvdDetailComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
