@@ -13,6 +13,7 @@ import { DvdDetailComponent } from './dvd/dvd-detail/dvd-detail.component';
 import { LoadingComponent } from './loading/loading.component';
 import { DvdFormComponent } from './dvd/dvd-form/dvd-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BookDetailComponent } from './book/book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     PageNotFoundComponent,
     DvdDetailComponent,
     LoadingComponent,
-    DvdFormComponent
+    DvdFormComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
